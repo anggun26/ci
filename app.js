@@ -24,7 +24,7 @@ let movieData = [{
     qty: 0
 }]
 
-app.post('/dump-data', (req, res, next) => {
+app.post('/', (req, res, next) => {
     Movie.insertMany(movieData)
      .then(movies => {
          res.status(201).json(movies)
