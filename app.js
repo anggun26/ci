@@ -1,7 +1,7 @@
 const express = require("express");
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 let movieData = [{
     title: 'SHANG-CHI AND THE LEGEND OF THE TEN RINGS',
