@@ -3,6 +3,8 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 3000;
 
+const movieData = require('./models/movie');
+
 let movieData = [{
     title: 'SHANG-CHI AND THE LEGEND OF THE TEN RINGS',
     desc: `Martial-arts master Shang-Chi confronts the past he thought he left behind when he's drawn into the web of the mysterious Ten Rings organization.`,
