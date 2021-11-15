@@ -3,7 +3,8 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 3000;
 
-const movieData = require('./models/movie');
+const Movie = require('../models/movie');
+const movieData = require('/db');
 
 app.get('/', (req, res, next) => {
     Movie.find(movieData)
