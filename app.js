@@ -24,8 +24,8 @@ let movieData = [{
     qty: 0
 }]
 
-app.post('/', (req, res, next) => {
-    Movie.insertMany(movieData)
+app.get('/', (req, res, next) => {
+    Movie.find(movieData)
      .then(movies => {
          res.status(201).json(movies)
      }) 
