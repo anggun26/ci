@@ -28,7 +28,7 @@ app.post('/', (req, res, next) => {
     Movie.insertMany(movieData)
      .then(movies => {
          res.status(201).json(movies)
-     })
+     }) 
      .catch(next)
 })
 
